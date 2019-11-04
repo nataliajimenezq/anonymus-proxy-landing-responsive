@@ -1,17 +1,103 @@
-.link__adalab:hover {
-  background-color: #099d8d;
-  color: #fff;
+* {
+  margin: 0;
+  padding: 0;
 }
 
-.link__github:hover {
-  background-color: #CCC;
-  color: #000;
-}
-
-body {
-  background: url("../images/logo-adalab-80px.png") center center no-repeat #f3f4f5;
+.page {
   margin: 0;
   height: 100vh;
+  background-color: #ffffff;
+  font-family: "Roboto Slab", sans-serif;
+}/*HEADER STYLES*/.header {
+  position: fixed;
+  z-index: 1;
+  width: 45px;
+  height: 45px;
+}
+
+.header__menu-button {
+  background-color: #0271bc;
+  width: 100%;
+  border: none;
+  padding: 12.5px;
+}/*MAIN STYLES*/.hero {
+  background-image: url("../images/cover.jpg");
+  background-size: cover;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+}
+
+.hero__container {
+  text-align: center;
+  color: #ffffff;
+  font-family: "Roboto Slab", sans-serif;
+  font-size: 2.1rem;
+}
+
+.hero__tittle {
+  font-weight: 700;
+  margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  text-align: center;
+}
+
+.hero-text {
+  font-size: 16px;
+}
+
+.hero__button {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  background: center white no-repeat;
+  border: none;
+  background-image: url("../images/ico-scroll-down.svg");
+  margin-bottom: 45px;
+}
+
+.hero__link {
+  padding: 25px;
+}
+
+.article__container {
+  padding: 30px 15px 45px 15px;
+  background-color: #ffffff;
+  border: 2px solid red;
+  height: 376px;
+}
+
+.article__category {
+  color: #8ccbea;
+  font-size: 14px;
+}
+
+.article__tittle {
+  font-size: 24px;
+}
+
+.article__text {
+  font-size: 18px;
+  color: #4a4a4a;
+  margin-top: 15px;
+  margin-bottom: 30px;
 }
 
 /*# sourceMappingURL=main.css.map */

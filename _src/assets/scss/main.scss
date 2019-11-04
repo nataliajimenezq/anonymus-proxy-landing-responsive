@@ -1,8 +1,97 @@
 @import 'core/variables';
-@import 'core/links';
 
-body {
-	background: url('../images/logo-adalab-80px.png') center center no-repeat $color-white;
-	margin: 0;
-	height: 100vh;
+
+* {
+    margin: 0;
+    padding: 0;
 }
+.page{
+	margin:0;
+	height: 100vh;
+	background-color:$color-white;
+	font-family:$font-text;
+	}
+
+/*HEADER STYLES*/
+
+.header{
+	position: fixed;
+	z-index: 1;
+	width: 45px;
+	height: 45px;
+}
+
+.header__menu-button{
+	background-color: #0271bc;
+	width:100%;
+	border:none;
+	padding:12.5px;
+	}
+
+/*MAIN STYLES*/
+
+.hero{
+	background-image:url("../images/cover.jpg");
+	background-size: cover;
+	height: 100vh;
+	display:flex;
+	flex-direction:column;
+	align-items:center;
+	justify-content:flex-end;
+
+	}
+.hero__container{
+	text-align:center;
+	color:$color-white;
+	font-family:$font-text;
+	font-size:2.1rem;
+
+}
+.hero__tittle{
+	font-weight: $font-weight;
+	margin:0;
+	display:flex;
+	flex-direction:column;
+	text-align: center;
+}
+.hero-text{
+	font-size: 16px;
+}
+
+.hero__button{
+	width: 45px;
+	height: 45px;
+	border-radius:50%;
+	background:center white no-repeat;
+	border:none;
+	background-image:url("../images/ico-scroll-down.svg");
+	margin-bottom:45px;
+	}	
+.hero__link{
+	padding:25px;
+}
+.article__container{
+	padding:30px 15px 45px 15px;
+	background-color:$color-white;
+	border:2px solid red;
+	height: 376px;
+}
+.article__category{
+	color:#8ccbea;
+	font-size: 14px;
+}
+.article__tittle{
+	font-size:24px;
+}
+.article__text{
+	font-size:18px;
+	color:#4a4a4a;
+	margin-top:15px;
+	margin-bottom:30px;
+}
+
+
+
+
+
+
