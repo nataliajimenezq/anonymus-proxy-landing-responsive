@@ -1,6 +1,6 @@
 .reasons__container{
 	background-color:$color-blue;
-	padding:30px 0 60px;
+	padding:30px 0;
 	line-height:30px;
 	text-align: center;
 	border:2px solid red;
@@ -21,6 +21,9 @@
 		column-gap:30px;
 		
 	}	
+	@media all and (min-width: 1280px) {
+		margin: 0 85px 0 85px;
+	}
 }
 .reasons__option{
 	margin-bottom:45px;
@@ -40,13 +43,28 @@
 }
 .reasons__button{
 	height: 45px;
-	padding:0 15px;
+	padding:10px 25px;
 	border:none;
 	border-radius:22.5px;
 	background-color:$color-orange;
+	outline:none;
 	color:$color-white;
 	font-size:20px;
-	@media all and(min-width:768px){
-		margin:60px 0 30px;
+	cursor:pointer;
+	&:hover{
+	background-color: $color-white;
+	border:2px solid $color-orange;
+	color:$color-orange;
 	}
-}
+
+	&:active {
+	color: black;
+	border:none;
+	outline: none;
+	}
+
+	@media all and(min-width:768px){
+		display:inline-block;
+		margin: 60px 0 60px 0;
+	}
+}	

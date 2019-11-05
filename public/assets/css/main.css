@@ -186,9 +186,9 @@ span {
 
 .article__container {
   line-height: 30px;
+  margin-bottom: 30px;
   background-color: #ffffff;
   border: 2px solid red;
-  height: 376px;
 }
 
 .article__category {
@@ -208,7 +208,6 @@ span {
 }
 
 .article__button {
-  height: 45px;
   border: 2px solid #f26002;
   border-radius: 22.5px;
   line-height: 45px;
@@ -217,9 +216,18 @@ span {
   padding: 10px 25px;
 }
 
+.article__button:hover {
+  background-color: #f26002;
+  color: white;
+}
+
+.article__button:active {
+  color: black;
+}
+
 .reasons__container {
   background-color: #eff9ff;
-  padding: 30px 0 60px;
+  padding: 30px 0;
   line-height: 30px;
   text-align: center;
   border: 2px solid red;
@@ -257,12 +265,26 @@ span {
 
 .reasons__button {
   height: 45px;
-  padding: 0 15px;
+  padding: 10px 25px;
   border: none;
   border-radius: 22.5px;
   background-color: #f26002;
+  outline: none;
   color: #ffffff;
   font-size: 20px;
+  cursor: pointer;
+}
+
+.reasons__button:hover {
+  background-color: #ffffff;
+  border: 2px solid #f26002;
+  color: #f26002;
+}
+
+.reasons__button:active {
+  color: black;
+  border: none;
+  outline: none;
 }/*MAIN STYLES*//*FOOTER STYLES*/@media all and (min-width: 768px) {
   .footer__container {
     -webkit-box-orient: horizontal;
@@ -304,7 +326,7 @@ span {
   }
 
   .article__container {
-    height: 330px;
+    margin-bottom: 60px;
   }
 
   .article__tittle {
@@ -335,7 +357,18 @@ span {
   }
 
   .reasons__button {
-    margin: 60px 0 30px;
+    display: inline-block;
+    margin: 60px 0 60px 0;
+  }
+}
+
+@media all and (min-width: 768px) and (min-width: 1280px) {
+  .article__container {
+    margin: 0 275px 60px 275px;
+  }
+
+  .article__button {
+    padding: 5px 55px;
   }
 }
 
@@ -364,6 +397,10 @@ span {
 
   .hero__button-cont {
     margin: 30px 0 13px 0;
+  }
+
+  .reasons__list {
+    margin: 0 85px 0 85px;
   }
 }
 

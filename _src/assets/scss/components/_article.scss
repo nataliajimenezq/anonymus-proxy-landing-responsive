@@ -3,9 +3,10 @@
 }
 .article__container{
 	line-height: 30px;
+	margin-bottom:30px;
 	background-color:$color-white;
 	border:2px solid red;
-	height: 376px;
+
 }
 .article__category{
 	color:$color-lightblue;
@@ -21,20 +22,25 @@
 	margin-bottom:30px;
 }
 .article__button{
-	height: 45px;
+
 	border:2px solid $color-orange;
 	border-radius: 22.5px;
-	line-height: 45px;
-	font-size:20px;
+	line-height: $lineheight-ma;
+	font-size:$fontsize-ma;
 	color:$color-orange;
 	padding:10px 25px;
+	&:hover{
+		background-color: $color-orange;
+		color:white;}
+	&:active {
+		color: black;}
 }
 @media all and (min-width:768px){
 	.article{
 		padding:30px 39px 0 39px;
 	}
 	.article__container{
-		height: 330px;
+		margin-bottom:60px;
 	}
 	.article__tittle{
 		font-size:26px;
@@ -42,4 +48,14 @@
 	.article__text{
 		font-size:20px;
 	}
+@media all and (min-width:1280px){
+	.article__container{
+		margin:0 275px 60px 275px;
+	}
+	.article__button{
+		padding:5px 55px;
+		
+	}
+}
+
 }
