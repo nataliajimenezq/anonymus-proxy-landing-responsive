@@ -240,6 +240,7 @@ html {
 .page {
   margin: 0;
   height: 100vh;
+  width: 100%;
   background-color: #ffffff;
   font-family: "Roboto Slab", sans-serif;
 }/*imports layout*/.header {
@@ -459,7 +460,7 @@ html {
 }
 
 .reasons__tittle {
-  margin-bottom: 45px;
+  margin: 0 0 35px 0;
 }
 
 .reasons__list {
@@ -479,11 +480,12 @@ html {
 }
 
 .reasons__option {
-  margin-bottom: 45px;
+  margin-bottom: 35px;
   max-width: 50%;
 }
 
 .reasons__option-tittle,.reasons__option-text {
+  margin-top: 0;
   width: 60%;
 }
 

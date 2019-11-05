@@ -8,7 +8,8 @@
 	}
 }
 .reasons__tittle{
-	margin-bottom:45px;
+	margin:0 0 35px 0;
+	
 }
 .reasons__list{
 	display:flex;
@@ -28,7 +29,7 @@
 	}
 }
 .reasons__option{
-	margin-bottom:45px;
+	margin-bottom:35px;
 	max-width:50%;
 	@media all and (min-width:768px){
 		margin:0;
@@ -36,7 +37,8 @@
 		justify-self:center;}
 
 	}
-.reasons__option-tittle,  .reasons__option-text{
+.reasons__option-tittle, .reasons__option-text{
+	margin-top: 0;
 	width:60%;
 	@media all and(min-width:768px){
 		width: 100%;
