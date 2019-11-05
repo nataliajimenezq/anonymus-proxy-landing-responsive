@@ -33,6 +33,7 @@
 .hero{
 	background-image:url("../images/cover.jpg");
 	background-size: cover;
+	background-position: center;
 	height: 100vh;
 	display:flex;
 	flex-direction:column;
@@ -70,8 +71,12 @@
 .hero__link{
 	padding:25px;
 }
+
+.article{
+	padding:30px 15px 0px 15px;
+}
 .article__container{
-	padding:30px 15px 45px 15px;
+	line-height: 30px;
 	background-color:$color-white;
 	border:2px solid red;
 	height: 376px;
@@ -89,6 +94,15 @@
 	margin-top:15px;
 	margin-bottom:30px;
 }
+.article__button{
+	height: 45px;
+	border:2px solid $color-orange;
+	border-radius: 22.5px;
+	line-height: 45px;
+	font-size:20px;
+	color:$color-orange;
+	padding:10px 25px;
+}
 .reasons__container{
 	background-color:$color-blue;
 	padding:30px 0 60px;
@@ -96,11 +110,88 @@
 	text-align: center;
 	border:2px solid red;
 }
+.reasons__tittle{
+	margin-bottom:45px;
+}
+.reasons__list{
+	display:flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
 .reasons__option{
-	margin :45px 0 70px;
+	margin-bottom:45px;
+	max-width:50%;
 	border:2px solid red;
 }
+.reasons__option-tittle,  .reasons__option-text{
+	width:60%;
+}
+.reasons__button{
+	height: 45px;
+	padding:0 15px;
+	border:none;
+	border-radius:22.5px;
+	background-color:$color-orange;
+	color:$color-white;
+	font-size:20px;
+}
+ /*FOOTER STYLES*/
 
+ .footer{
+	 padding: 45px 0;
+	 background-color: $color-darkblue;
+	 color:$color-white;
+	 text-align: center;
+ }
+
+ .footer__container{
+	 padding: 15px 15px;
+	 font-size:16px;
+	 line-height: 30px;
+	 text-transform: uppercase;
+	 display:flex;
+	 flex-direction: column;
+	 align-items:center;
+	 border:2px solid red;
+ }
+ .footer__nav{
+	 border:2px solid red;
+	 padding: inherit;
+ }
+ .footer__social-container{
+	 border:2px solid red;
+	 padding:inherit;
+
+ }
+ .footer__copy{
+	 padding:inherit;
+	 text-transform: none;
+	 display:flex;
+	 flex-direction: column;
+ }
+ .footer__button-cont{
+	 display:flex;
+	 flex-direction: row;
+	 justify-content: center;
+	 position:relative;
+ }
+ .footer__button{
+	position: absolute;
+	transform: translateY(-50%);
+	width: 45px;
+	height: 45px;
+	border-radius:50%;
+	background:center white no-repeat;
+	border:none;
+	background-image:url("../images/ico-arrow.svg");
+ }
+ .footer__link{
+	 padding:25px;
+ }
+
+
+ 
 	
 
 
