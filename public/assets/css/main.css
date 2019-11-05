@@ -100,4 +100,17 @@
   margin-bottom: 30px;
 }
 
+.reasons__container {
+  background-color: #eff9ff;
+  padding: 30px 0 60px;
+  line-height: 30px;
+  text-align: center;
+  border: 2px solid red;
+}
+
+.reasons__option {
+  margin: 45px 0 70px;
+  border: 2px solid red;
+}
+
 /*# sourceMappingURL=main.css.map */

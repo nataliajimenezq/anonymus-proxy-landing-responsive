@@ -77,7 +77,7 @@
 	height: 376px;
 }
 .article__category{
-	color:#8ccbea;
+	color:$color-lightblue;
 	font-size: 14px;
 }
 .article__tittle{
@@ -85,11 +85,23 @@
 }
 .article__text{
 	font-size:18px;
-	color:#4a4a4a;
+	color:$color-grey;
 	margin-top:15px;
 	margin-bottom:30px;
 }
+.reasons__container{
+	background-color:$color-blue;
+	padding:30px 0 60px;
+	line-height:30px;
+	text-align: center;
+	border:2px solid red;
+}
+.reasons__option{
+	margin :45px 0 70px;
+	border:2px solid red;
+}
 
+	
 
 
 
