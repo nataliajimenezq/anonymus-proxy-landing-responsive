@@ -1,9 +1,5 @@
 @import 'core/variables.scss';
-
-* {
-    margin: 0;
-	padding: 0;
-}
+@import 'vendors/normalize.scss';
 
 html{
 	font-size:16px;
