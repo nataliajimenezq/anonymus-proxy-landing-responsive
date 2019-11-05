@@ -1,4 +1,4 @@
-* {
+/*COLOR VARIABLES*//*FONTS VARIABLES*//*LINEHEIGHT*/* {
   margin: 0;
   padding: 0;
 }
@@ -27,16 +27,14 @@ html {
 }
 
 .footer {
-  padding: 45px 0;
+  font-size: 16px;
   background-color: #304268;
   color: #ffffff;
+  line-height: 30px;
   text-align: center;
 }
 
 .footer__container {
-  padding: 0 15px 0 15px;
-  font-size: 16px;
-  line-height: 30px;
   text-transform: uppercase;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -48,21 +46,20 @@ html {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  border: 2px solid red;
+  margin: 0 15px 0 15px;
 }
 
 .footer__nav {
-  border: 2px solid red;
-  padding: inherit;
+  margin-top: 60px;
 }
 
 .footer__social-container {
-  border: 2px solid red;
-  padding: inherit;
+  margin-top: 30px;
 }
 
 .footer__copy {
-  padding: inherit;
+  font-size: 14px;
+  margin: 30px 0 45px 0;
   text-transform: none;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -71,6 +68,16 @@ html {
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
+}
+
+.footer__link {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.footer__icon {
+  color: #f26002;
+  padding: 5px;
 }
 
 .footer__button-cont {
@@ -99,7 +106,7 @@ html {
   background-image: url("../images/ico-arrow.svg");
 }
 
-.footer__link {
+.footer__button-link {
   padding: 25px;
 }/*imports components*/.hero {
   background-image: url("../images/cover.jpg");
@@ -119,15 +126,12 @@ html {
   -webkit-box-pack: end;
   -ms-flex-pack: end;
   justify-content: flex-end;
-  border: 2px solid red;
 }
 
 .hero__container {
- /*max-width: 320px;*/
   text-align: center;
   color: #ffffff;
   font-family: "Roboto Slab", sans-serif;
-  border: 2px solid red;
   -webkit-box-ordinal-group: 2;
   -ms-flex-order: 1;
   order: 1;
@@ -146,12 +150,10 @@ html {
   -ms-flex-direction: column;
   flex-direction: column;
   text-align: center;
-  border: 2px solid red;
 }
 
 .hero-text {
   font-size: 16px;
-  border: 2px solid red;
 }
 
 .hero__button-cont {
@@ -168,16 +170,10 @@ html {
   background: center white no-repeat;
   border: none;
   background-image: url("../images/ico-scroll-down.svg");
-  border: 2px solid red;
 }
 
 .hero__link {
   padding: 15px;
-  border: 2px solid red;
-}
-
-span {
-  border: 2px solid red;
 }
 
 .article {
@@ -188,7 +184,6 @@ span {
   line-height: 30px;
   margin-bottom: 30px;
   background-color: #ffffff;
-  border: 2px solid red;
 }
 
 .article__category {
@@ -218,19 +213,19 @@ span {
 
 .article__button:hover {
   background-color: #f26002;
-  color: white;
+  color: #ffffff;
 }
 
 .article__button:active {
-  color: black;
+  color: #000000;
+  background-color: #ffffff;
 }
 
 .reasons__container {
   background-color: #eff9ff;
-  padding: 30px 0;
+  padding-top: 30px;
   line-height: 30px;
   text-align: center;
-  border: 2px solid red;
 }
 
 .reasons__tittle {
@@ -256,7 +251,6 @@ span {
 .reasons__option {
   margin-bottom: 45px;
   max-width: 50%;
-  border: 2px solid red;
 }
 
 .reasons__option-tittle,.reasons__option-text {
@@ -272,6 +266,8 @@ span {
   outline: none;
   color: #ffffff;
   font-size: 20px;
+  display: inline-block;
+  margin-bottom: 60px;
   cursor: pointer;
 }
 
@@ -282,11 +278,14 @@ span {
 }
 
 .reasons__button:active {
-  color: black;
-  border: none;
+  color: #000000;
+  border: 2px solid #f26002;
   outline: none;
-}/*MAIN STYLES*//*FOOTER STYLES*/@media all and (min-width: 768px) {
+}
+
+@media all and (min-width: 768px) {
   .footer__container {
+    margin: 0  39px 0px 39px;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
     -ms-flex-direction: row;
@@ -294,6 +293,9 @@ span {
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: space-between;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
     text-align: left;
   }
 
@@ -301,6 +303,11 @@ span {
     -webkit-box-ordinal-group: -1;
     -ms-flex-order: -2;
     order: -2;
+  }
+
+  .footer__nav,.footer__social-container,.footer__copy {
+    margin-top: 45px;
+    margin-bottom: 45px;
   }
 
   .hero__container {
@@ -357,18 +364,8 @@ span {
   }
 
   .reasons__button {
-    display: inline-block;
-    margin: 60px 0 60px 0;
-  }
-}
-
-@media all and (min-width: 768px) and (min-width: 1280px) {
-  .article__container {
-    margin: 0 275px 60px 275px;
-  }
-
-  .article__button {
-    padding: 5px 55px;
+    margin: 60px;
+    padding: 6px 45px;
   }
 }
 
@@ -385,6 +382,30 @@ span {
     align-items: center;
   }
 
+  .footer__container {
+    padding: 45px 0 45px 0;
+  }
+
+  .footer__nav {
+    width: 161px;
+    margin: 0 15px 0 15px;
+  }
+
+  .footer__social-container {
+    width: 159px;
+    margin: 0 15px 0 15px;
+  }
+
+  .footer__copy {
+    margin: 0 15px 0 15px;
+  }
+
+  .footer__button:hover {
+    -webkit-transform: translate(0, -60%) scale(1.2);
+    transform: translate(0, -60%) scale(1.2);
+    border: 1px solid #304268;
+  }
+
   .hero__container {
     max-width: 730px;
   }
@@ -397,6 +418,18 @@ span {
 
   .hero__button-cont {
     margin: 30px 0 13px 0;
+  }
+
+  .article__container {
+    margin: 0 275px 60px 275px;
+  }
+
+  .article__button {
+    padding: 5px 55px;
+  }
+
+  .reasons__container {
+    padding-top: 60px;
   }
 
   .reasons__list {

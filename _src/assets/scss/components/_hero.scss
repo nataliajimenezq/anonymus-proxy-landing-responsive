@@ -7,15 +7,11 @@
 	flex-direction:column;
 	align-items:center;
 	justify-content:flex-end;
-	border:2px solid red;
-
 	}
 .hero__container{
-	/*max-width: 320px;*/
 	text-align:center;
 	color:$color-white;
 	font-family:$font-text;
-	border:2px solid red;
 	order:1;
 	@media all and (min-width:768px){
 		max-width: 690px;
@@ -33,7 +29,7 @@
 	display:flex;
 	flex-direction:column;
 	text-align: center;
-	border:2px solid red;
+
 	@media all and (min-width:768px){
 		font-size:$fontsize-th;
 		line-height: $lineheight-th;
@@ -49,8 +45,8 @@
 }
 .hero-text{
 	font-size: $fontsize-mtxt;
-	border:2px solid red;
-	@media all and (min-width:768px){
+
+    @media all and (min-width:768px){
 		font-size:$fontsize-ttxt;
 	}
 
@@ -74,13 +70,8 @@
 	background:center white no-repeat;
 	border:none;
 	background-image:url("../images/ico-scroll-down.svg");
-	border:2px solid red;
 	}	
 .hero__link{
 	padding:15px;
-	border:2px solid red;
-}
-span{
-	border:2px solid red;
 }
 

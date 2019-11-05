@@ -1,9 +1,11 @@
 .reasons__container{
 	background-color:$color-blue;
-	padding:30px 0;
+	padding-top:30px;
 	line-height:30px;
 	text-align: center;
-	border:2px solid red;
+	@media all and (min-width:1280px){
+		padding-top:60px;
+	}
 }
 .reasons__tittle{
 	margin-bottom:45px;
@@ -28,7 +30,6 @@
 .reasons__option{
 	margin-bottom:45px;
 	max-width:50%;
-	border:2px solid red;
 	@media all and (min-width:768px){
 		margin:0;
 		max-width:80%;
@@ -49,7 +50,9 @@
 	background-color:$color-orange;
 	outline:none;
 	color:$color-white;
-	font-size:20px;
+	font-size:$fontsize-ma;
+	display:inline-block;
+	margin-bottom:60px;
 	cursor:pointer;
 	&:hover{
 	background-color: $color-white;
@@ -58,13 +61,13 @@
 	}
 
 	&:active {
-	color: black;
-	border:none;
+	color: $color-black;
+	border:2px solid $color-orange;
 	outline: none;
 	}
 
 	@media all and(min-width:768px){
-		display:inline-block;
-		margin: 60px 0 60px 0;
+		margin:60px;
+		padding:6px 45px;
 	}
 }	
