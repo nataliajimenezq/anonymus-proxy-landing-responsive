@@ -658,6 +658,10 @@ html {
     padding: 5px 55px;
   }
 
+  .article__category {
+    font-size: 16px;
+  }
+
   .reasons__container {
     padding-top: 60px;
   }
