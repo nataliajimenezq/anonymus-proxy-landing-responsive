@@ -29,3 +29,17 @@
 	color:$color-orange;
 	padding:10px 25px;
 }
+@media all and (min-width:768px){
+	.article{
+		padding:30px 39px 0 39px;
+	}
+	.article__container{
+		height: 330px;
+	}
+	.article__tittle{
+		font-size:26px;
+	}
+	.article__text{
+		font-size:20px;
+	}
+}

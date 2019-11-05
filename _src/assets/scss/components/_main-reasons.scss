@@ -13,14 +13,30 @@
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
+
+	@media all and (min-width: 768px) {
+		display:grid;
+		grid-template-columns: 1fr 1fr 1fr;
+		grid-template-rows:1fr;
+		column-gap:30px;
+		
+	}	
 }
 .reasons__option{
 	margin-bottom:45px;
 	max-width:50%;
 	border:2px solid red;
-}
+	@media all and (min-width:768px){
+		margin:0;
+		max-width:80%;
+		justify-self:center;}
+
+	}
 .reasons__option-tittle,  .reasons__option-text{
 	width:60%;
+	@media all and(min-width:768px){
+		width: 100%;
+	}
 }
 .reasons__button{
 	height: 45px;
@@ -30,4 +46,7 @@
 	background-color:$color-orange;
 	color:$color-white;
 	font-size:20px;
+	@media all and(min-width:768px){
+		margin:60px 0 30px;
+	}
 }
