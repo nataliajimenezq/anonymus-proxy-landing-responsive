@@ -3,6 +3,10 @@
   padding: 0;
 }
 
+html {
+  font-size: 16px;
+}
+
 .page {
   margin: 0;
   height: 100vh;
@@ -115,18 +119,25 @@
   -webkit-box-pack: end;
   -ms-flex-pack: end;
   justify-content: flex-end;
+  border: 2px solid red;
 }
 
 .hero__container {
+ /*max-width: 320px;*/
   text-align: center;
   color: #ffffff;
   font-family: "Roboto Slab", sans-serif;
-  font-size: 2.1rem;
+  border: 2px solid red;
+  -webkit-box-ordinal-group: 2;
+  -ms-flex-order: 1;
+  order: 1;
 }
 
 .hero__tittle {
   font-weight: 700;
-  margin: 0;
+  font-size: 42px;
+  line-height: 55px;
+  margin-bottom: 10px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -135,10 +146,19 @@
   -ms-flex-direction: column;
   flex-direction: column;
   text-align: center;
+  border: 2px solid red;
 }
 
 .hero-text {
   font-size: 16px;
+  border: 2px solid red;
+}
+
+.hero__button-cont {
+  -webkit-box-ordinal-group: 3;
+  -ms-flex-order: 2;
+  order: 2;
+  margin: 45px 0 53px 0;
 }
 
 .hero__button {
@@ -148,11 +168,16 @@
   background: center white no-repeat;
   border: none;
   background-image: url("../images/ico-scroll-down.svg");
-  margin-bottom: 45px;
+  border: 2px solid red;
 }
 
 .hero__link {
-  padding: 25px;
+  padding: 15px;
+  border: 2px solid red;
+}
+
+span {
+  border: 2px solid red;
 }
 
 .article {
@@ -256,6 +281,24 @@
     order: -2;
   }
 
+  .hero__container {
+    max-width: 690px;
+  }
+
+  .hero__tittle {
+    font-size: 80px;
+    line-height: 106px;
+    margin-bottom: 20px;
+  }
+
+  .hero-text {
+    font-size: 24px;
+  }
+
+  .hero__button-cont {
+    margin: 30px 0 45px 0;
+  }
+
   .article {
     padding: 30px 39px 0 39px;
   }
@@ -307,6 +350,20 @@
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
+  }
+
+  .hero__container {
+    max-width: 730px;
+  }
+
+  .hero__tittle {
+    font-size: 100px;
+    line-height: 132px;
+    margin-bottom: 0;
+  }
+
+  .hero__button-cont {
+    margin: 30px 0 13px 0;
   }
 }
 
