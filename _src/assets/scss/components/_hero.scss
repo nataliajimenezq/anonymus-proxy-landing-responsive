@@ -1,0 +1,41 @@
+.hero{
+	background-image:url("../images/cover.jpg");
+	background-size: cover;
+	background-position: center;
+	height: 100vh;
+	display:flex;
+	flex-direction:column;
+	align-items:center;
+	justify-content:flex-end;
+
+	}
+.hero__container{
+	text-align:center;
+	color:$color-white;
+	font-family:$font-text;
+	font-size:2.1rem;
+
+}
+.hero__tittle{
+	font-weight: $font-weight;
+	margin:0;
+	display:flex;
+	flex-direction:column;
+	text-align: center;
+}
+.hero-text{
+	font-size: 16px;
+}
+
+.hero__button{
+	width: 45px;
+	height: 45px;
+	border-radius:50%;
+	background:center white no-repeat;
+	border:none;
+	background-image:url("../images/ico-scroll-down.svg");
+	margin-bottom:45px;
+	}	
+.hero__link{
+	padding:25px;
+}

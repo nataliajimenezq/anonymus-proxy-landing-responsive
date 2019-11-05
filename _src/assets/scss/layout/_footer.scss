@@ -1,0 +1,51 @@
+.footer{
+    padding: 45px 0;
+    background-color: $color-darkblue;
+    color:$color-white;
+    text-align: center;
+}
+
+.footer__container{
+    padding: 15px 15px;
+    font-size:16px;
+    line-height: 30px;
+    text-transform: uppercase;
+    display:flex;
+    flex-direction: column;
+    align-items:center;
+    border:2px solid red;
+}
+.footer__nav{
+    border:2px solid red;
+    padding: inherit;
+}
+.footer__social-container{
+    border:2px solid red;
+    padding:inherit;
+
+}
+.footer__copy{
+    padding:inherit;
+    text-transform: none;
+    display:flex;
+    flex-direction: column;
+}
+.footer__button-cont{
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    position:relative;
+}
+.footer__button{
+   position: absolute;
+   transform: translateY(-50%);
+   width: 45px;
+   height: 45px;
+   border-radius:50%;
+   background:center white no-repeat;
+   border:none;
+   background-image:url("../images/ico-arrow.svg");
+}
+.footer__link{
+    padding:25px;
+}

@@ -1,0 +1,33 @@
+.reasons__container{
+	background-color:$color-blue;
+	padding:30px 0 60px;
+	line-height:30px;
+	text-align: center;
+	border:2px solid red;
+}
+.reasons__tittle{
+	margin-bottom:45px;
+}
+.reasons__list{
+	display:flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.reasons__option{
+	margin-bottom:45px;
+	max-width:50%;
+	border:2px solid red;
+}
+.reasons__option-tittle,  .reasons__option-text{
+	width:60%;
+}
+.reasons__button{
+	height: 45px;
+	padding:0 15px;
+	border:none;
+	border-radius:22.5px;
+	background-color:$color-orange;
+	color:$color-white;
+	font-size:20px;
+}

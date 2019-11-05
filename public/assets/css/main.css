@@ -8,7 +8,7 @@
   height: 100vh;
   background-color: #ffffff;
   font-family: "Roboto Slab", sans-serif;
-}/*HEADER STYLES*/.header {
+}/*imports layout*/.header {
   position: fixed;
   z-index: 1;
   width: 45px;
@@ -20,7 +20,84 @@
   width: 100%;
   border: none;
   padding: 12.5px;
-}/*MAIN STYLES*/.hero {
+}
+
+.footer {
+  padding: 45px 0;
+  background-color: #304268;
+  color: #ffffff;
+  text-align: center;
+}
+
+.footer__container {
+  padding: 15px 15px;
+  font-size: 16px;
+  line-height: 30px;
+  text-transform: uppercase;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border: 2px solid red;
+}
+
+.footer__nav {
+  border: 2px solid red;
+  padding: inherit;
+}
+
+.footer__social-container {
+  border: 2px solid red;
+  padding: inherit;
+}
+
+.footer__copy {
+  padding: inherit;
+  text-transform: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.footer__button-cont {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  position: relative;
+}
+
+.footer__button {
+  position: absolute;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  background: center white no-repeat;
+  border: none;
+  background-image: url("../images/ico-arrow.svg");
+}
+
+.footer__link {
+  padding: 25px;
+}/*imports components*/.hero {
   background-image: url("../images/cover.jpg");
   background-size: cover;
   background-position: center;
@@ -161,81 +238,6 @@
   background-color: #f26002;
   color: #ffffff;
   font-size: 20px;
-}/*FOOTER STYLES*/.footer {
-  padding: 45px 0;
-  background-color: #304268;
-  color: #ffffff;
-  text-align: center;
-}
-
-.footer__container {
-  padding: 15px 15px;
-  font-size: 16px;
-  line-height: 30px;
-  text-transform: uppercase;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  border: 2px solid red;
-}
-
-.footer__nav {
-  border: 2px solid red;
-  padding: inherit;
-}
-
-.footer__social-container {
-  border: 2px solid red;
-  padding: inherit;
-}
-
-.footer__copy {
-  padding: inherit;
-  text-transform: none;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
-}
-
-.footer__button-cont {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  position: relative;
-}
-
-.footer__button {
-  position: absolute;
-  -webkit-transform: translateY(-50%);
-  transform: translateY(-50%);
-  width: 45px;
-  height: 45px;
-  border-radius: 50%;
-  background: center white no-repeat;
-  border: none;
-  background-image: url("../images/ico-arrow.svg");
-}
-
-.footer__link {
-  padding: 25px;
-}
+}/*MAIN STYLES*//*FOOTER STYLES*/
 
 /*# sourceMappingURL=main.css.map */
