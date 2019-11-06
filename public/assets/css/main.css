@@ -407,6 +407,17 @@ html {
   padding: 15px;
 }
 
+.newsection {
+  background-color: #f26002;
+  color: #ffffff;
+  text-align: center;
+  padding: 0 20px 0 20px;
+}
+
+.newsection__tittle {
+  margin-top: 0;
+}
+
 .article {
   padding: 30px 15px 0px 15px;
 }
@@ -601,14 +612,27 @@ html {
   }
 }
 
+@media all and (min-width: 780px) {
+  .newsection {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    background-color: #304268;
+  }
+}
+
 @media all and (min-width: 1280px) {
   .footer {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
+    -webkit-box-pack: space-evenly;
+    -ms-flex-pack: space-evenly;
+    justify-content: space-evenly;
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;

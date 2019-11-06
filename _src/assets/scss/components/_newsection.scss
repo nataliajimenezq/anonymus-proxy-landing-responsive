@@ -1,0 +1,18 @@
+.newsection{
+    background-color:$color-orange;
+    color:$color-white;
+    text-align:center;
+    padding:0 20px 0 20px;
+   
+}
+.newsection__tittle{
+    margin-top:0;   
+}
+@media all and(min-width:780px){
+
+.newsection{
+    display:flex;
+    flex-direction:row;
+    background-color:$color-darkblue;
+}
+ }
